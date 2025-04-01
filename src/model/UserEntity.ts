@@ -6,8 +6,15 @@ export class UserEntity extends AirEntity {
     label: "邮箱"
   })
   email!: string
-  @Table()
+
+  @Table({
+    label:"密码"
+  })
   password!: string
+
+  @Field({
+    label:"昵称"
+  })
   @Table()
   nickname!: string
 }

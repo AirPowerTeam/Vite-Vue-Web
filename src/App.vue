@@ -1,23 +1,15 @@
 <script setup lang="ts">
-import { ref } from "vue";
 import { UserEntity } from "./model/UserEntity";
 import { UserService } from "./model/UserService";
-import { QueryPageRequest, QueryPageResponse } from "@airpower/web";
+import { useTable, WebTable } from "@airpower/web";
 
-const response = ref(new QueryPageResponse<UserEntity>());
 
-async function init() {
-  response.value = await UserService.create().getPage(
-    new QueryPageRequest(UserEntity)
-  );
-  console.log(response.value);
-}
-init();
+const { response} = useTable(UserEntity,UserService)
 </script>
 
 <template>
   <div class="table">
-    {{ response }}
+    <WebTable :data="response.list" :clazz="UserEntity"></WebTable>
   </div>
 </template>
 
