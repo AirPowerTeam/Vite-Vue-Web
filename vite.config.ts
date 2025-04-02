@@ -7,7 +7,8 @@ export default defineConfig({
   server: {
     proxy: {
       '/api': {
-        target: 'https://demo.spms.work/api/',
+        target: 'http://127.0.0.1:8080/',
+        // target: 'https://demo.spms.work/api/',
         changeOrigin: true,
         rewrite: (path) => path.replace(/^\/api/, '')
       }

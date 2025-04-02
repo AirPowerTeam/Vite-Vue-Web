@@ -5,7 +5,7 @@ import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 import { UserEntity } from "./model/UserEntity";
 import { UserService } from "./model/UserService";
-import { WebAccessToken } from "@airpower/web";
+import { WebAccessToken} from "@airpower/web";
 
 const app = createApp(App);
 
