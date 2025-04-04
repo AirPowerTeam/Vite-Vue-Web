@@ -17,5 +17,11 @@ export const English: Strings = {
   DisableSuccess: "",
   EnableSuccess: "",
   FileTooLarge: "",
-  FileUnknownSize: ""
+  FileUnknownSize: "",
+  Confirm: "",
+  Cancel: "",
+  ConfirmPlease: "",
+  ConfirmToDisable: "",
+  ConfirmToEnable: "",
+  ConfirmToDelete: ""
 };
