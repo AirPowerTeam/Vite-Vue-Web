@@ -1,16 +1,19 @@
 <script setup lang="ts">
-import {UserEntity} from "./model/UserEntity";
-import {UserService} from "./model/UserService";
-import {TableController, WebTable} from "@airpower/web";
+import { Strings } from "./config/Strings";
 
-// const { response, isLoading } = useTable(UserEntity, UserService);
-const {response, isLoading} = new TableController(UserService)
+console.log(Strings.get());
+
+
 </script>
 
 <template>
-  <div class="table">
-    <WebTable v-loading="isLoading" :data="response.list" :clazz="UserEntity"/>
-  </div>
+  <div class="test">
+    {{ Strings.get().Hello_Fucking_World }}
+    </div>
 </template>
 
-<style scoped></style>
+<style scoped>
+.test{
+  font-size: 32px;
+}
+</style>
