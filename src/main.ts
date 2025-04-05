@@ -6,10 +6,10 @@ import "element-plus/dist/index.css";
 import { UserEntity } from "./model/UserEntity";
 import { UserService } from "./model/UserService";
 import { AirI18n, AirLanguage, WebAccessToken} from "@airpower/web";
-import { Strings } from "./config/Strings";
+import { Languages } from "./config/Languages";
 import { English } from "./config/English";
 
-Strings.addLanguage(English)
+Languages.addLanguage(English)
 AirI18n.setCurrentLanguage(AirLanguage.ChineseSimplified)
 
 const app = createApp(App);
