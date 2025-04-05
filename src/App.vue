@@ -11,5 +11,6 @@ const {response, isLoading} = new TableController(UserService)
   <div>
     {{ Languages.get().GoodsName }}
   </div>
+  <div>{{ response.list }}</div>
   <WebTable v-loading="isLoading" :data="response.list" :clazz="UserEntity"/>
 </template>
