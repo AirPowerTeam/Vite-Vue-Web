@@ -1,18 +1,6 @@
 import { AirLanguage } from "@airpower/web";
 import type { Languages } from "./Languages";
 
-
-
-
-
-
-
-
-
-
-
-
-
 /**
  * # 英语语言包
  */
