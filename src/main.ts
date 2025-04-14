@@ -5,7 +5,7 @@ import ElementPlus from "element-plus";
 import "element-plus/dist/index.css";
 import { UserEntity } from "./model/UserEntity";
 import { UserService } from "./model/UserService";
-import { I18n, Language, WebAccessTokenUtil} from "@airpower/web";
+import {I18n, Language, WebAccessTokenUtil} from "@airpower/web";
 import { Languages } from "./config/Languages";
 import { English } from "./config/English";
 
