@@ -1,7 +1,7 @@
-import { AirEntity, Field, Table } from "@airpower/web";
+import { Entity, Field, Table} from "@airpower/web";
 import { UserGender } from "./UserGender";
 
-export class UserEntity extends AirEntity {
+export class UserEntity extends Entity {
   @Field({
     alias: "nickname",
     label:"昵称"
@@ -27,7 +27,7 @@ export class UserEntity extends AirEntity {
   avatar!: string;
 
   @Field({
-    dictionary: UserGender,
+    enums: UserGender,
   })
   gender!: number;
 }

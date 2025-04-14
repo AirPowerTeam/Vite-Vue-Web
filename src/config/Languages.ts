@@ -1,6 +1,6 @@
-import {AirI18n} from "airpower";
+import {I18n} from "airpower";
 
-export class Languages extends AirI18n {
+export class Languages extends I18n {
   GoodsName = '商品名称'
 }
 
