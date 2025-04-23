@@ -1,11 +1,5 @@
 <template>
   <ADialog :title="title" @cancel="onCancel" @confirm="onSubmit">
-    <div>
-      {{ formData }}
-    </div>
-    <div>
-      {{ rules }}
-    </div>
     <el-form ref="formRef" :rules="rules" :model="formData">
       <!-- 不推荐 -->
       <el-form-item :label="getFieldLabel(formData, 'nickname')" prop="nickname">
