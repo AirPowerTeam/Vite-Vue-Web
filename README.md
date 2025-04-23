@@ -19,23 +19,23 @@
 
 ### 添加了
 
-- `src/UserEntity.ts`
+- `src/user/UserEntity.ts`
 
   用户数据建模
  
-- `src/UserService.ts`
+- `src/user/UserService.ts`
 
   用户数据API服务
 
-- `src/UserGender.ts`
+- `src/user/UserGender.ts`
 
   用户性别枚举
 
-- `src/UserEditor.vue`
+- `src/user/UserEditor.vue`
 
   用户编辑页面
 
-- `src/UserList.vue`
+- `src/user/UserList.vue`
 
   用户列表页面
 
