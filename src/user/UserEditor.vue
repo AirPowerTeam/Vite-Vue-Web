@@ -35,5 +35,4 @@ import { UserService } from './UserService';
 const props = defineProps(DialogProps.withParam(new UserEntity()))
 const { title, rules, formRef, formData, onSubmit } = useEditor(props, UserService)
 
-getFieldLabel(new UserEntity(), 'age')
 </script>
