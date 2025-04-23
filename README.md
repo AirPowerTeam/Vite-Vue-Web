@@ -33,5 +33,9 @@
 
 - `src/UserEditor.vue`
 
-  用户编辑器
+  用户编辑页面
+
+- `src/UserList.vue`
+
+  用户列表页面
 
